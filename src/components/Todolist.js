@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Header from './Header';
+import AddNewItem from './AddNewItem';
 
 const Todolist = () => {
 
@@ -38,10 +39,14 @@ const Todolist = () => {
                     mx-auto my-auto border rounded shadow'>
                     {/* Header Component */}
                     <Header />
+                    {/* Add New Item Component */}
+                    <AddNewItem
+                        taskList={taskList}
+                        getList={getList}
+                    />
                     
                 </div>
             </div>
-            {/* Update Input Component */}
             
         </div>
     </>)
