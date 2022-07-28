@@ -9,15 +9,15 @@ const Todolist = () => {
     // Task list to store all task
     const [taskList, setTaskList] = useState(['Dates', 'Coconuts', 'Bananas', 'Apples']);
 
-    // Function to setTaskList from localStorage
+    // Function to setTaskList from sessionStorage
     const getList = () => setTaskList(JSON.parse(sessionStorage.getItem('taskList')));
 
     useEffect(() => {
-        // Getting taskList from localStorage
+        // Getting taskList from sessionStorage
         const getTaskList = JSON.parse(sessionStorage.getItem('taskList'));
 
-        // Check taskList available in localStorage
-        // If taskList not available then set in localStorage
+        // Check taskList available in sessionStorage
+        // If taskList not available then set in sessionStorage
         if (getTaskList) {
             setTaskList(getTaskList);
         } else {

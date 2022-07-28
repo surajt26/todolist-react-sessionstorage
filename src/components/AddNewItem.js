@@ -19,7 +19,7 @@ const AddNewItem = (props) => {
 
     // Add new task action handle
     const handleForm = (e) => {
-        // Stop default event behaviour
+        // Stop default event behavior
         e.preventDefault();
         // Trim all white space from both side
         const trimUpdateTask = task.trim();
@@ -32,7 +32,7 @@ const AddNewItem = (props) => {
 
     // Remove all list action handle
     const removeAllHandle = (e) => {
-        // Stop default event behaviour
+        // Stop default event behavior
         e.preventDefault();
         sessionStorage.setItem('taskList', JSON.stringify([]));
         getList();

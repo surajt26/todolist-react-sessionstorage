@@ -23,7 +23,7 @@ const UpdateInput = (props) => {
 
     // Update input action handle
     const updateItemHandle = (e) => {
-        // Stop default event behaviour
+        // Stop default event behavior
         e.preventDefault();
         // Trim all white space from both side
         const trimUpdateText = updateText.trim();
@@ -44,7 +44,7 @@ const UpdateInput = (props) => {
 
     // Cancel update action handle
     const cancelUpdateHandle = (e) => {
-        // Stop default event behaviour
+        // Stop default event behavior
         e.preventDefault();
         setSelectedTask({
             task: '',
